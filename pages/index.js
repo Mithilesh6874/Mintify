@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useContext } from "react";
 import { Loader, Banner, CreatorCard, SearchBar } from "../components";
-import { makeId } from "../  /makeId";
+import { makeId } from "../utils/makeId";
 import { getCreators } from "../utils/getTopCreators";
 import images from "../assets";
 import Image from "next/image";
@@ -145,7 +145,7 @@ const Home = () => {
                     creatorEths={creator.sum}
                   />
                 ))}
-                {/* {[6, 7, 8, 9, 10].map((i) => (
+                {[6, 7, 8, 9, 10].map((i) => (
                   <CreatorCard
                     key={`creator-${i}`}
                     rank={i}
@@ -153,7 +153,7 @@ const Home = () => {
                     creatorName={`0x${makeId(3)}...${makeId(4)}`}
                     creatorEths={10 - i * 0.5}
                   />
-                ))} */}
+                ))}
                 {!hideButtons && (
                   <>
                     <div

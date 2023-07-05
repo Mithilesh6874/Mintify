@@ -32,7 +32,7 @@ const fetchContract = (signerOrProvider) =>
 export const NFTContext = React.createContext();
 
 export const NFTProvider = ({ children }) => {
-  const [currentAccount, setCurrentAccount] = useState("");
+  const [currentAccount, setCurrentAccount] = useState(false);
   const [isLoadingNFT, setIsLoadingNFT] = useState(false);
   const nftCurrency = "ETH";
 
@@ -177,12 +177,6 @@ export const NFTProvider = ({ children }) => {
     console.log(type, "type");
 
     console.log(contract, "contractcontract");
-    //  getting fetch nft data because no any result
-    // const data =
-    //   type === "fetchItemsListed"
-    //     ? await contract.fetchItemsListed()
-    //     : await contract.fetchMyNFTs();
-    // const data = await contract.fetchMyNFTs();
     const data = await contract.fetchItemsListed();
     const items = await Promise.all(
       data.map(async ({ tokenId, seller, owner, price: unformattedPrice }) => {

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ethersproject/contracts": "^5.7.0",
     "@nomiclabs/hardhat-ethers": "2.0.5",
     "@openzeppelin/contracts": "^4.7.3",
     "@walletconnect/web3-provider": "^1.8.0",
@@ -48,13 +49,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mithilesh6874/nftmarketpalce.git"
+    "url": "git+https://github.com/Mithilesh6874/Mintify.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Mithilesh6874/nftmarketpalce/issues"
+    "url": "https://github.com/Mithilesh6874/Mintify/issues"
   },
-  "homepage": "https://github.com/Mithilesh6874/nftmarketpalce#readme"
+  "homepage": "https://github.com/Mithilesh6874/Mintify#readme"
 }
